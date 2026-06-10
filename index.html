@@ -11,48 +11,61 @@
         <img src="./home.svg" alt="">
         <img src="./en.svg"  class=" px-4 py-2">
       </div>
-      <div class="h-screen bg-cover bg-center"
-       style="background-image: url('./home-main-uni4edu-1771717446202-PHOTO_URL\ \(1\).jpeg')">
-       <h1 class="text-4xl text-white font-bold px-12 py-8">
-        Find Your Perfect University,<br> Language School or Summer <br> Schools Program
-       </h1>
-       <p class="text-white px-12 py-8">
-             Uni4edu simplifies the journey to studying <br>abroad by bringing top institutions worldwide <br>
-            into a single digital platform. Manage your<br> entire process—from school selection to<br>
-            application—directly within the system and <br> achieve your academic and career goals<br> online.
-         </p> 
-         <div class="flex  gap-9 px-14">
-    
-         <button class="text-white text-2xl rounded-lg bg-cyan-500 hover:bg-cyan-600 px-6 py-3">Explore programs</button>
-         <button class="text-green-500 rounded-lg bg-white hover:bg-green-600 px-6 py-3">Get Free Advice</button>
-
-         </div>
-       
+      <div class="relative h-screen overflow-hidden bg-cover bg-center" style="background-image: url('./home-main-uni4edu-1771717446202-PHOTO_URL (1).jpeg')">
+        <div class="absolute inset-0 bg-slate-950/40"></div>
+        <div class="relative z-10 px-12 py-16">
+          <h1 class="text-4xl text-white font-bold max-w-3xl leading-tight sm:text-5xl">
+            Find Your Perfect University,<br> Language School or Summer <br> Schools Program
+          </h1>
+          <p class="mt-6 max-w-2xl text-base text-white/90 sm:text-lg">
+            Uni4edu simplifies the journey to studying abroad by bringing top institutions worldwide into a single digital platform. Manage your entire process—from school selection to application—directly within the system and achieve your academic and career goals online.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <button class="rounded-2xl bg-cyan-500 px-7 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-cyan-600">Explore programs</button>
+            <button class="rounded-2xl border border-white/40 bg-white px-7 py-3 text-base font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100">Get Free Advice</button>
+          </div>
+        </div>
       </div>
 
-      <div class="">
-      <div class="flex justify-center py-8 h-8 ">
-  <div class="flex items-center gap-20 px-6 py-3 border border-gray-300 rounded-lg shadow">
-    <label class="flex items-center gap-2 ">
-      <input type="radio" class="hover: bg-sky-700">
-      <span>University Programs</span>
-    </label>
+      <div class="relative -mt-20 px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl rounded-[32px] border border-white/20 bg-white/80 p-6 shadow-2xl shadow-slate-900/10 backdrop-blur-xl sm:p-8">
+          <div class="flex flex-col gap-3 rounded-3xl bg-white/90 p-3 sm:flex-row sm:items-center sm:justify-between">
+            <button class=" bg-sky-500 px-6 py-2 text-sm font-semibold text-white">University Programs</button>
+            <button class=" bg-white px-6 py-2 text-sm font-semibold text-slate-700">Language Schools</button>
+            <button class=" bg-white px-6 py-2 text-sm font-semibold text-slate-700">Summer Schools</button>
+          </div>
 
-    <label class="flex items-center gap-2 ">
-      <input type="radio" class="accent-red-950">
-      <span>Language Schools</span>
-    </label>
-
-    <label class="flex items-center gap-2">
-      <input type="radio" class="accent-red-700">
-      <span>Summer Schools</span>
-    </label>
-  </div>
-</div>
- <div  class="flex items-center gap-10  border border-gray-300 rounded-lg shadow">
-    <button>Search</button>
-  </div>
-</div>
+          <div class="mt-6 grid gap-4 sm:grid-cols-5">
+            <div>
+              <label class="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Location</label>
+              <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
+                <option>Select Location</option>
+              </select>
+            </div>
+            <div>
+              <label class="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Institution</label>
+              <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
+                <option>Select Institution</option>
+              </select>
+            </div>
+            <div>
+              <label class="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Discipline</label>
+              <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
+                <option>Select Discipline</option>
+              </select>
+            </div>
+            <div>
+              <label class="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Program Level</label>
+              <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
+                <option>Select Program Level</option>
+              </select>
+            </div>
+            <div class="flex items-end justify-end">
+              <button class="inline-flex h-14 w-full items-center justify-center rounded-2xl bg-cyan-600 px-6 py-3 text-base font-semibold text-white transition hover:bg-cyan-700">🔍</button>
+            </div>
+          </div>
+        </div>
+      </div>
 <h1 class="text-4xl text-black  font-bold px-20">Why Choose Uni4Edu?</h1>
 <p class="text-xl text-gray-600 px-20 py-4">Uni4Edu brings together thousands of schools and programs on a single platform, making it easy for<br>
     students to apply quickly and access free counseling, visa support, and exclusive scholarship opportunities.</p>
@@ -125,7 +138,7 @@
     <div class="p-6">
       <h1 class="font-bold text-2xl text-black mb-3">Language Schools</h1>
       <p class="text-gray-600 text-sm leading-relaxed">Improve your language skills through accredited schools offering English, Spanish, German, French, and Italian courses from beginner to advanced levels. Experience cultural immersion while learning from native speaking instructors.</p>
-      <button class="mt-4 bg-pink-200 text-gray-800 px-4 py-2 rounded hover:bg-pink-300">Learn More →</button>
+      <button class="mt-4 bg-blue-500 text-gray-800 px-4 py-2 rounded hover:bg-blue-600">Learn More →</button>
     </div>
 
   </div>
@@ -135,12 +148,12 @@
     <div class="p-6">
       <h1 class="font-bold text-2xl text-black mb-3">Summer / Winter Schools</h1>
       <p class="text-gray-600 text-sm leading-relaxed">Explore international primary and secondary school options designed for academic excellence, personal growth, and global citizenship.</p>
-      <button class="mt-4 bg-purple-200 text-gray-800 px-4 py-2 rounded hover:bg-purple-300">Learn More →</button>
+      <button class="mt-4 bg-purple-200 text-gray-800 px-4 py-2 rounded hover:bg-blue-600">Learn More →</button>
     </div>
 
   </div>
 </div>
-<div>
+<div class="px-10 text-xl text-gray-600 bg-black-250">
     <h1> <class="text-2xl"><strong> University Programs </strong> </h1> <br>
    <p>
 Taking the first step toward your dream university has never been easier! <br><br>
@@ -170,36 +183,39 @@ Our partner institutions include globally recognized schools such as <strong>EC 
 
 With a wide range of affordable options, students can choose between 2–4 week intensive courses or 6–12 month academic or exam-focused <br> (IELTS, TOEFL) programs. Accommodation preferences are completely customizable — from homestay and student residences to shared <br> apartments, allowing students to feel at home wherever they are. <br><br>
 
-The entire process is managed digitally: students select their program, upload their documents, and Uni4Edu counselors quickly get in touch to create the most suitable combination of school, country, and accommodation.
+The entire process is managed digitally: students select their program, upload their documents, and Uni4Edu counselors quickly get in touch to <br> create the most suitable combination of school, country, and accommodation. <br><br>
 
-Visa, accommodation, registration, and insurance procedures are all supported by our professional team — with no consultancy fees.
+Visa, accommodation, registration, and insurance procedures are all supported by our professional team —<strong> with no consultancy fees </strong>.
+</p>
 
 
+<h1><strong>Summer/Winter Schools</strong></h1>
+<p>Learning while having fun is possible! <br> <br>
 
-Summer/Winter Schools
-Learning while having fun is possible!
+Uni4Edu brings together the world’s most prestigious summer and winter school programs, designed to help students improve their language <br> skills and gain cultural awareness in a short time. These programs offer much more than language learning — they provide new friendships,<br> confidence, independence, and an unforgettable international experience. <br><br>
 
-Uni4Edu brings together the world’s most prestigious summer and winter school programs, designed to help students improve their language skills and gain cultural awareness in a short time. These programs offer much more than language learning — they provide new friendships, confidence, independence, and an unforgettable international experience.
+Among our partner institutions are globally recognized names such as <trong>Embassy Summer, English Path, LSI (Language Studies International) </trong>, <strong>and Twin </strong>. <br><br>
 
-Among our partner institutions are globally recognized names such as Embassy Summer, English Path, LSI (Language Studies International), and Twin.
+Programs are designed according to age groups and tailored to each student’s interests, offering a variety of options such as: <br><br>
+</p>
+<ul>
+<li> Language + Activity-based camps </li>
+<li> Certified short-term academic or cultural programs</li>
+<li> University preparation camps </li>
+<li> Art, sports, and leadership-themed summer schools </li>
+</ul>
+  All programs ensure students learn in safe,<strong> supervised, and comfortable environments.</strong> <br><br>
 
-Programs are designed according to age groups and tailored to each student’s interests, offering a variety of options such as:
 
-Language + Activity-based camps
-Certified short-term academic or cultural programs
-University preparation camps
-Art, sports, and leadership-themed summer schools
-All programs ensure students learn in safe, supervised, and comfortable environments.
+Fees typically include accommodation, meals, tuition, activities, and excursions. Students stay in on-campus housing or school dormitories, with <br> 24-hour security and supervision. On the first day of the program, students are greeted with safe airport-to-accommodation transfer services.<br><br>
 
-Fees typically include accommodation, meals, tuition, activities, and excursions. Students stay in on-campus housing or school dormitories, with 24-hour security and supervision. On the first day of the program, students are greeted with safe airport-to-accommodation transfer services.
+The entire application process can be completed easily through the Uni4Edu system.<br><br>
 
-The entire application process can be completed easily through the Uni4Edu system.
+Parents or students can submit applications, upload documents, and communicate directly with our counseling team.<br>
 
-Parents or students can submit applications, upload documents, and communicate directly with our counseling team.
+Support your child’s journey to explore the world through a safe, fun, and educational international experience.<br><br>
 
-Support your child’s journey to explore the world through a safe, fun, and educational international experience.
-
-With Uni4Edu, every summer is a new adventure of discovery!
+<strong>With Uni4Edu, every summer is a new adventure of discovery!</strong>
 </div>
 
 
