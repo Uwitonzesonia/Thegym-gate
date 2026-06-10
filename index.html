@@ -66,42 +66,53 @@
       </div>
 
       <div class="relative -mt-20 px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-6xl rounded-[32px] border border-white/20 bg-white/80 p-6 shadow-2xl shadow-slate-900/10 backdrop-blur-xl sm:p-8">
-          <div class="flex flex-col gap-3 rounded-3xl bg-white/90 p-3 sm:flex-row sm:items-center sm:justify-between">
-            <button class=" bg-blue-700 px-6 py-2 text-sm font-semibold text-white">University Programs</button>
-            <button class=" bg-white px-6 py-2 text-sm font-semibold text-slate-700">Language Schools</button>
-            <button class=" bg-white px-6 py-2 text-sm font-semibold text-slate-700">Summer Schools</button>
+        <div class="mx-auto max-w-6xl rounded-[32px] border border-white/20 bg-white/80 p-4 shadow-2xl shadow-slate-900/10 backdrop-blur-xl sm:p-6 lg:p-8">
+          <!-- Tabs -->
+          <div class="rounded-2xl bg-white p-2 shadow-sm">
+            <div class="flex items-center justify-start gap-3 px-2">
+              <button class="px-5 py-2 rounded-lg bg-blue-600 text-white text-sm font-semibold">University Programs</button>
+              <button class="px-5 py-2 rounded-lg text-sm font-medium text-slate-600 bg-white">Language Schools</button>
+              <button class="px-5 py-2 rounded-lg text-sm font-medium text-slate-600 bg-white">Summer Schools</button>
+            </div>
           </div>
 
-          <div class="mt-6 grid gap-4 sm:grid-cols-5">
-            <div>
-              <label class="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Location</label>
-              <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
-                <option>Select Location</option>
-              </select>
+          <!-- Form -->
+          <form class="mt-6">
+            <div class="grid grid-cols-1 gap-4 sm:flex sm:items-end sm:gap-0">
+              <div class="sm:flex sm:divide-x sm:divide-slate-200 sm:grow">
+                <div class="px-2 sm:px-6 sm:flex-1">
+                  <label class="mb-2 block text-xs font-semibold uppercase text-slate-600">Location</label>
+                  <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
+                    <option>Select Location</option>
+                  </select>
+                </div>
+                <div class="px-2 sm:px-6 sm:flex-1">
+                  <label class="mb-2 block text-xs font-semibold uppercase text-slate-600">Institution</label>
+                  <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
+                    <option>Select Institution</option>
+                  </select>
+                </div>
+                <div class="px-2 sm:px-6 sm:flex-1">
+                  <label class="mb-2 block text-xs font-semibold uppercase text-slate-600">Discipline</label>
+                  <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
+                    <option>Select Discipline</option>
+                  </select>
+                </div>
+                <div class="px-2 sm:px-6 sm:flex-1">
+                  <label class="mb-2 block text-xs font-semibold uppercase text-slate-600">Program Level</label>
+                  <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
+                    <option>Select Program Level</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="px-2 sm:px-4 sm:pl-6">
+                <button type="submit" class="h-12 w-12 sm:h-14 sm:w-14 flex items-center justify-center rounded-2xl bg-blue-600 text-white shadow">
+                  <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+                </button>
+              </div>
             </div>
-            <div>
-              <label class="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Institution</label>
-              <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
-                <option>Select Institution</option>
-              </select>
-            </div>
-            <div>
-              <label class="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Discipline</label>
-              <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
-                <option>Select Discipline</option>
-              </select>
-            </div>
-            <div>
-              <label class="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Program Level</label>
-              <select class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100">
-                <option>Select Program Level</option>
-              </select>
-            </div>
-            <div class="flex items-end justify-end">
-              <button class="inline-flex h-14 w-full items-center justify-center rounded-2xl bg-blue-700 px-6 py-3 text-base font-semibold text-white transition hover:bg-sky-500">🔍</button>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
 <h1 class="text-4xl text-black  font-bold px-20">Why Choose Uni4Edu?</h1>
@@ -146,19 +157,23 @@
  Study with confidence every university and school we work with is verified and accredited to guarantee a trusted and secure academic experience abroad.
 </div>
 </div>
-<div class="border-2 border-gray-500 flex gap-96 rounded-xl mt-6 ml-20 mr-20 ">
-  <div>
-    <h1 class="text-3xl font-bold">50.000 +</h1>
-    <p class="text-gray-500">Courses and Programs</p>
-  </div>
-  <div>
-    <h1 class="text-3xl font-bold">150 +</h1>
-    <p class="text-gray-500">Study Destinations</p>
-  </div>
-  <div>
-    <h1 class="text-3xl font-bold">% 98</h1>
-    <p class="text-gray-500">Success Rate</p>
-  </div>
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <div class="bg-white border border-slate-100 rounded-xl shadow-sm">
+      <div class="grid grid-cols-1 sm:grid-cols-3 text-center">
+        <div class="py-6 px-6">
+          <div class="text-3xl sm:text-4xl font-extrabold text-slate-800">50.000 +</div>
+          <div class="mt-2 text-sm text-slate-500">Courses and Programs</div>
+        </div>
+        <div class="py-6 px-6 sm:border-l sm:border-slate-200">
+          <div class="text-3xl sm:text-4xl font-extrabold text-slate-800">150 +</div>
+          <div class="mt-2 text-sm text-slate-500">Study Destinations</div>
+        </div>
+        <div class="py-6 px-6 sm:border-l sm:border-slate-200">
+          <div class="text-3xl sm:text-4xl font-extrabold text-slate-800">%98</div>
+          <div class="mt-2 text-sm text-slate-500">Success Rate</div>
+        </div>
+      </div>
+    </div>
   </div>
   <h1 class="text-black text-4xl font-bold py-7 px-20">Find the Best Fit for Your Goals</h1>
   <div class="flex gap-8 px-20 pb-20">
