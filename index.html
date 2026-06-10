@@ -7,10 +7,48 @@
     <title> university website</title>
   </head>
   <body class="bg-gray-100">
-    <div class="bg-white flex justify-between px-8 py-8 ">
-        <img src="./home.svg" alt="">
-        <img src="./en.svg"  class=" px-4 py-2">
+    <nav class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-6">
+            <a href="#" class="flex items-center">
+              <img src="./home.svg" alt="Uni4Edu logo" class="h-8 w-auto" />
+            </a>
+
+            <div class="hidden md:flex items-center gap-6">
+              <a href="#" class="text-sm font-medium text-slate-700 hover:text-slate-900 flex items-center gap-1">Universities
+                <svg viewBox="0 0 20 20" class="h-4 w-4 text-slate-500" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.584l3.71-4.353a.75.75 0 011.14.976l-4.25 5a.75.75 0 01-1.14 0l-4.25-5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+              </a>
+              <a href="#" class="text-sm font-medium text-slate-700 hover:text-slate-900">Masters</a>
+              <a href="#" class="text-sm font-medium text-slate-700 hover:text-slate-900 flex items-center gap-1">Language Schools
+                <svg viewBox="0 0 20 20" class="h-4 w-4 text-slate-500" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.584l3.71-4.353a.75.75 0 011.14.976l-4.25 5a.75.75 0 01-1.14 0l-4.25-5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+              </a>
+              <a href="#" class="text-sm font-medium text-slate-700 hover:text-slate-900 flex items-center gap-1">Summer Schools
+                <svg viewBox="0 0 20 20" class="h-4 w-4 text-slate-500" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.584l3.71-4.353a.75.75 0 011.14.976l-4.25 5a.75.75 0 01-1.14 0l-4.25-5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+              </a>
+              <a href="#" class="text-sm font-medium text-slate-700 hover:text-slate-900">High School</a>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="hidden sm:flex items-center gap-4 text-sm text-slate-700">
+              <a href="#" class="hover:underline">Become an Agent</a>
+              <a href="#" class="hover:underline">Partnership</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <button class="hidden sm:inline-flex p-2 rounded-full text-slate-600 hover:bg-slate-100" aria-label="search">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+              </button>
+
+              <a href="#" class="inline-flex items-center rounded-md bg-cyan-400 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500">Login</a>
+
+              <img src="./en.svg" alt="lang" class="h-6 w-6 rounded ml-2 hidden sm:block" />
+            </div>
+          </div>
+        </div>
       </div>
+    </nav>
       <div class="relative h-screen overflow-hidden bg-cover bg-center" style="background-image: url('./home-main-uni4edu-1771717446202-PHOTO_URL (1).jpeg')">
         <div class="absolute inset-0 bg-slate-950/40"></div>
         <div class="relative z-10 px-12 py-16">
@@ -243,7 +281,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-white py-16 sm:py-20 gap-0">
+  <div class="bg-white py-16 flex gap-0">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
         <div class="space-y-10">
@@ -295,7 +333,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 <div class="px-10 text-xl text-gray-600 bg-black-250 ml-10 mt-14">
     <h1> <class="text-2xl"><strong> University Programs </strong> </h1> <br>
    <p>
